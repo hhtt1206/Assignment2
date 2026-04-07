@@ -190,7 +190,10 @@ def main() -> None:
         w.start()
     
     # TODO: Wait for all threads to finish
-
+    for r in readers:
+        r.join()
+    for w in writers:
+        w.join()
 
     # TODO: Print final message that simulation completed
 
