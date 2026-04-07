@@ -196,7 +196,7 @@ def main() -> None:
         w.join()
 
     # TODO: Print final message that simulation completed
-
+    print("All threads finished.")
 
 if __name__ == "__main__":
     main()
