@@ -184,7 +184,10 @@ def main() -> None:
     all_threads = readers + writers
     
     # TODO: Start all threads
-
+    for r in readers:
+        r.start()
+    for w in writers:
+        w.start()
     
     # TODO: Wait for all threads to finish
 
